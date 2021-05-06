@@ -22,6 +22,10 @@
   margin-left: 30px;
   justify-content: center;
 
+  li:hover {
+    color: black;
+  }
+
   & .functioning-step {
     background-color: $color-gray-clear;
     border-radius: 20px;
@@ -30,6 +34,15 @@
     margin-top: 20px;
     margin-right: 20px;
     width: 330px;
+    transition: all 500ms ease-in-out;
+
+    &:hover > i {
+      color: $color-primary;
+    }
+
+    &:hover {
+      background-color: lighten($color-primary, 30%);
+    }
 
     & .functioning-number {
       background-color: $color-primary;

@@ -120,6 +120,9 @@ a:visited {
   margin-left: 30px;
   justify-content: center;
 }
+.functioning-steps li:hover {
+  color: black;
+}
 .functioning-steps .functioning-step {
   background-color: #f6f6f6;
   border-radius: 20px;
@@ -128,6 +131,13 @@ a:visited {
   margin-top: 20px;
   margin-right: 20px;
   width: 330px;
+  transition: all 500ms ease-in-out;
+}
+.functioning-steps .functioning-step:hover > i {
+  color: #9356dc;
+}
+.functioning-steps .functioning-step:hover {
+  background-color: #e4d5f6;
 }
 .functioning-steps .functioning-step .functioning-number {
   background-color: #9356dc;
