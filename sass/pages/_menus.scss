@@ -1,0 +1,189 @@
+.img-palette-du-goût {
+  background-image: url(../../public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+
+  @media (min-width: 500px) {
+    height: 350px;
+  }
+
+  @media (min-width: 800px) {
+    height: 450px;
+  }
+}
+
+.img-note-enchantee {
+  @extend .img-palette-du-goût;
+  background-image: url(../../public/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+}
+
+.img-delice-des-sens {
+  @extend .img-palette-du-goût;
+  background-image: url(../../public/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+}
+
+.img-a-la-francaise {
+  @extend .img-palette-du-goût;
+  background-image: url(../../public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+}
+
+.menu-restaurant {
+  background-color: $color-gray-clear;
+  border-radius: 40px 40px 0 0;
+  padding-bottom: 55px;
+  margin-top: -50px;
+
+  & .menu-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    @media (min-width: 1200px) {
+      justify-content: center;
+    }
+
+    & h1 {
+      padding-right: 10px;
+      font-size: 1.6rem;
+    }
+
+    & .like-heart {
+      font-size: 1.8rem;
+      padding-top: 5px;
+      padding-right: 25px;
+      cursor: pointer;
+      color: #fff;
+      -webkit-text-stroke: 1px #000;
+      &:hover {
+        background: $heart-color;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 0;
+        animation: like-heart-hover 1.5s;
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      @media (min-width: 1200px) {
+        padding-right: 50px;
+      }
+    }
+  }
+}
+
+.container-menu-food {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  margin-left: 20px;
+
+  @media (min-width: 800px) {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: 1rem;
+    border-bottom: 4px $color-tertiary solid;
+    width: 42px;
+    padding-bottom: 5px;
+    margin-top: 35px;
+  }
+
+  .menu-food {
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-top: 15px;
+    padding: 10px;
+    box-shadow: 0 5px 10px silver;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    line-height: 1.5rem;
+    h3 {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      font-size: 1.1rem;
+    }
+
+    @media (min-width: 800px) {
+      width: 250px;
+    }
+    @media (min-width: 1200px) {
+      width: 300px;
+    }
+
+    & .menu-presentation p:last-child {
+      transition: all 0.5s ease-in-out;
+      padding-right: 20px;
+    }
+
+    &:hover .menu-check {
+      right: 0;
+    }
+
+    &:hover i {
+      right: 0;
+      animation: check-icon 0.8s;
+    }
+    &:hover .menu-presentation p:last-child {
+      margin-right: 70px;
+    }
+
+    &:hover h3 {
+      width: 230px;
+    }
+  }
+
+  .menu-presentation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    & p:first-child {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      font-weight: 400;
+    }
+  }
+  .menu-check {
+    position: absolute;
+    right: -70px;
+    top: 0;
+    color: white;
+    width: 60px;
+    height: 70px;
+    background: $color-tertiary;
+    border-radius: 0 15px 15px 0;
+    transition: right 0.8s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// ANIMATIONS MENUS FOOD
+
+.appearance-1 {
+  animation: appearance 1.5s;
+}
+.appearance-2 {
+  animation: appearance 2s;
+}
+.appearance-3 {
+  animation: appearance 2.5s;
+}
+.appearance-4 {
+  animation: appearance 3s;
+}

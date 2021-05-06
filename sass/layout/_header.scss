@@ -1,0 +1,21 @@
+.header-menu {
+  text-align: center;
+
+  & i {
+    position: absolute;
+    left: 24px;
+    top: 25px;
+  }
+
+  & img {
+    width: 160px;
+    padding: 20px 0 10px 0;
+  }
+}
+
+.header-accueil img {
+  width: 160px;
+  display: flex;
+  margin: auto;
+  padding: 20px 0 10px 0;
+}

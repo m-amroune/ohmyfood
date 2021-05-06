@@ -1,0 +1,28 @@
+footer {
+  height: 198px;
+  background-color: $color-footer;
+  display: flex;
+  flex-direction: column;
+
+  & h2 {
+    padding: 25px 0 25px 25px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 800;
+  }
+
+  & a {
+    color: white;
+    line-height: 1.6rem;
+    padding-left: 25px;
+    font-size: 1rem;
+
+    &:visited {
+      color: white;
+    }
+  }
+  & i {
+    margin-right: 12px;
+    width: 1rem;
+  }
+}

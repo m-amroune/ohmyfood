@@ -1,0 +1,21 @@
+// utils
+@import "./utils/variables";
+@import "./utils/keyframes";
+
+// base
+@import "./base/base";
+
+//components
+
+@import "./components/buttons";
+@import "./components/cards";
+
+// layout
+
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/loading";
+
+//pages
+@import "./pages/accueil";
+@import "./pages/menus";
